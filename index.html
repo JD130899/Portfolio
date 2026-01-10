@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Responsive Personal Portfolio</title>
+</head>
+
+<body>
+  <div class="abstract-bg"></div>
+  <header>
+    <div class="container">
+      <nav>
+        <!-- Logo removed for minimal header -->
+
+        <div class="list-darkmode-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="images/Jai Dalvi-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- Dark mode toggle removed: always dark theme -->
+
+          <button class="hamburger" aria-label="Menu">
+            <div class="bar"></div>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HOME ===================== -->
+  <section class="home page" id="home">
+    <div class="container">
+      <div class="home-info">
+        <div class="left">
+          <h3>Hello, I'm</h3>
+          <h1><span class="gradient-name">Jai Dalvi</span></h1>
+          <h4>And I'm a <span class="multiple"></span></h4>
+
+          <p>
+           I build intelligent, scalable AI systems specializing in large language models, retrieval-augmented generation, and data-driven automation for real-world impact
+          </p>
+
+          <div class="social">
+          <a href="https://www.instagram.com/joiiii_17" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://facebook.com/jaidalvi.jaidalvi" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jaipdalvi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://github.com/JD130899/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <div class="btn">
+          <button onclick="window.open('images/Jai Dalvi-Resume.pdf', '_blank')">
+            Download CV
+          </button>
+        </div>
+
+        </div>
+
+        <div class="right">
+          <div class="profile">
+            <img src="images/jai.jpeg" alt="Jai Dalvi" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===================== ABOUT ===================== -->
+<section class="about page" id="about">
+  <div class="container">
+
+    <!-- ABOUT CARD (same as before) -->
+    <div class="about-card">
+      <div class="about-left">
+        <div class="about-avatar">
+          <img src="images/jai.jpeg" alt="Jai Dalvi" />
+        </div>
+
+        <div class="about-actions">
+         <a class="about-btn" href="images/Jai Dalvi-Resume.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+
+          <a
+            class="about-btn"
+            href="https://www.linkedin.com/in/jaipdalvi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="about-btn ghost"
+            href="https://github.com/JD130899/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-subtitle">
+          AI / LLM Engineer focused on building production-ready RAG and ML systems.
+        </p>
+
+        <ul class="about-points">
+          <li>
+            <span class="icon"><i class="fa-solid fa-user-gear"></i></span>
+            <span>
+              MS ECE @ Carnegie Mellon University (GPA 3.75), graduated Dec 2025.
+            </span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-diagram-project"></i></span>
+            <span>
+              Building an LLM-based RAG system for engineering drawing retrieval +
+              correction (Misumi).
+            </span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-robot"></i></span>
+            <span>
+              Designed & deployed a valuation-report RAG agent using LangChain,
+              LlamaParse, FAISS, reranking, and Streamlit.
+            </span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-film"></i></span>
+            <span>
+              Developed a Netflix-like two-tower recommender with API, telemetry (Kafka),
+              CI/CD, and monitoring (Prometheus/Grafana).
+            </span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+            <span>
+              Experience in dashboards + ML for business decision-making (EY).
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END ABOUT CARD -->
+
+    <!-- ===================== EDUCATION TIMELINE (SAME FORMAT AS EXPERIENCE) ===================== -->
+    <div class="edu-wrap">
+      <div class="we-head">
+        <p class="we-kicker"><i class="fa-solid fa-graduation-cap"></i> Education Timeline</p>
+        <h2 class="we-title">Education<span></span></h2>
+      </div>
+
+      <div class="we-timeline">
+
+        <!-- CMU -->
+        <div class="we-item left">
+          <div class="we-card cool">
+            <div class="we-card-top">
+              <div>
+                <h3>MS Electrical & Computer Engineering</h3>
+                <p class="we-org">Carnegie Mellon University • Pittsburgh, PA</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> 2024 – 2025</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-brain"></i> ML</span>
+              <span><i class="fa-solid fa-robot"></i> LLMs</span>
+              <span><i class="fa-solid fa-chart-line"></i> Systems</span>
+            </div>
+            <ul class="we-points">
+              <li>
+                <span class="pt-ic ic-blue"><i class="fa-solid fa-star"></i></span>
+                GPA: 3.75/4.0
+              </li>
+
+              <li>
+                <span class="pt-ic ic-purple"><i class="fa-solid fa-book-open"></i></span>
+                Relevant Coursework: Machine Learning in Production, Large Language Models: Methods & Applications, Intro to ML for Engineers, Intro to Deep Learning, Deep Generative Modelling, Advanced NLP.
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          </div>
+
+          <div class="we-date">2024–2025</div>
+        </div>
+
+        <!-- SPIT -->
+        <div class="we-item right">
+          <div class="we-date">2018–2022</div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-school"></i></span>
+          </div>
+
+          <div class="we-card light cool">
+            <div class="we-card-top">
+              <div>
+                <h3>BE Electronics & Telecommunication (EXTC)</h3>
+                <p class="we-org">SPIT • Mumbai, India</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> 2018 – 2022</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-microchip"></i> ECE</span>
+              <span><i class="fa-solid fa-code"></i> Programming</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-green"><i class="fa-solid fa-medal"></i></span>GPA: 9.36/10</li>
+              <li>
+                <span class="pt-ic ic-purple"><i class="fa-solid fa-book-open"></i></span>
+                Relevant Coursework: Fundamentals of Data Structures & Algorithms, ML and AI Lab (Elective), Fundamentals of Computational Intelligence.
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ===================== END EDUCATION TIMELINE ===================== -->
+
+  </div>
+</section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="experience page" id="experience">
+    <div class="container">
+      <div class="we-head">
+        <p class="we-kicker"><i class="fa-regular fa-calendar-days"></i> Work & Research Timeline</p>
+        <h2 class="we-title">Experience<span></span></h2>
+      </div>
+
+      <div class="we-timeline">
+        <div class="we-item left">
+          <div class="we-card light cool">
+            <div class="we-card-top">
+              <div>
+                <h3>AI Engineer</h3>
+                <p class="we-org">Value Buddy, Inc. • Louisville, KY</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> May 2025 – Aug 2025</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-link"></i> LangChain</span>
+              <span><i class="fa-solid fa-file-lines"></i> LlamaParse</span>
+              <span><i class="fa-solid fa-layer-group"></i> FAISS</span>
+              <span><i class="fa-solid fa-chart-simple"></i> Streamlit</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-orange"><i class="fa-solid fa-bullseye"></i></span>Designed a RAG agent over valuation reports for precise, context-aware answers.</li>
+              <li><span class="pt-ic ic-blue"><i class="fa-solid fa-gears"></i></span>Built end-to-end pipeline: parsing → retrieval → rerank → Streamlit app delivery.</li>
+            </ul>
+          </div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-briefcase"></i></span>
+          </div>
+
+          <div class="we-date">2025</div>
+        </div>
+
+
+       <div class="we-item right">
+        <div class="we-date">2025</div>
+
+        <div class="we-mid">
+          <span class="we-icon"><i class="fa-solid fa-flask"></i></span>
+        </div>
+
+        <div class="we-card cool">
+          <div class="we-card-top">
+            <div>
+              <h3>Student Researcher / Graduate Research Assistant</h3>
+              <p class="we-org">Carnegie Mellon University • Pittsburgh, PA</p>
+            </div>
+            <span class="we-pill"><i class="fa-regular fa-calendar"></i> Jan 2025 – Present</span>
+          </div>
+
+          <div class="we-stack">
+            <span><i class="fa-solid fa-robot"></i> LLMs</span>
+            <span><i class="fa-solid fa-magnifying-glass"></i> RAG</span>
+            <span><i class="fa-solid fa-diagram-project"></i> Retrieval</span>
+          </div>
+
+          <ul class="we-points">
+            <li><span class="pt-ic ic-purple"><i class="fa-solid fa-brain"></i></span>Building an LLM-based RAG system for engineering drawings (Misumi).</li>
+            <li><span class="pt-ic ic-cyan"><i class="fa-solid fa-wand-magic-sparkles"></i></span>Automating corrections + refining extracted information for downstream workflows.</li>
+          </ul>
+        </div>
+      </div>
+
+
+        <div class="we-item left">
+          <div class="we-card cool">
+            <div class="we-card-top">
+              <div>
+                <h3>Student Researcher</h3>
+                <p class="we-org">Carnegie Mellon University • Pittsburgh, PA</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> May 2024 – Dec 2024</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-eye"></i> YOLOv7</span>
+              <span><i class="fa-solid fa-person-running"></i> Pose</span>
+              <span><i class="fa-solid fa-camera"></i> CV</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-green"><i class="fa-solid fa-person-walking"></i></span>Built pose estimation using YOLOv7 (object + keypoint detection).</li>
+              <li><span class="pt-ic ic-pink"><i class="fa-solid fa-shield-halved"></i></span>Applied it to construction-site safety monitoring + risk detection.</li>
+            </ul>
+          </div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-flask"></i></span>
+          </div>
+
+          <div class="we-date">2024</div>
+        </div>
+
+        <div class="we-item right">
+          <div class="we-date">2022–2023</div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-briefcase"></i></span>
+          </div>
+
+          <div class="we-card light cool">
+            <div class="we-card-top">
+              <div>
+                <h3>Senior Analyst</h3>
+                <p class="we-org">Ernst & Young LLP • Mumbai, India</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> Sep 2022 – Dec 2023</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-chart-line"></i> Dashboards</span>
+              <span><i class="fa-solid fa-brain"></i> ML</span>
+              <span><i class="fa-solid fa-database"></i> Analytics</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-indigo"><i class="fa-solid fa-chart-column"></i></span>Built dashboards and ML solutions to support business decision-making.</li>
+              <li><span class="pt-ic ic-cyan"><i class="fa-solid fa-people-group"></i></span>Translated requirements into operational improvements + analytics deliverables.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="we-item left">
+          <div class="we-card cool">
+            <div class="we-card-top">
+              <div>
+                <h3>Research Intern</h3>
+                <p class="we-org">University at Buffalo • Buffalo, NY</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> Jun 2022 – Aug 2022</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> GANs</span>
+              <span><i class="fa-solid fa-layer-group"></i> Multimodal</span>
+              <span><i class="fa-solid fa-book"></i> Research</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-purple"><i class="fa-solid fa-cubes"></i></span>Worked on GAN-based multimodal models (StyleGAN, CycleGAN, Progressive GAN).</li>
+              <li><span class="pt-ic ic-orange"><i class="fa-solid fa-scroll"></i></span>Experimented on folklore datasets and analyzed generation quality.</li>
+            </ul>
+          </div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-flask"></i></span>
+          </div>
+
+          <div class="we-date">2022</div>
+        </div>
+
+        <div class="we-item right">
+          <div class="we-date">2022</div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-briefcase"></i></span>
+          </div>
+
+          <div class="we-card light cool">
+            <div class="we-card-top">
+              <div>
+                <h3>Machine Learning Intern</h3>
+                <p class="we-org">Hindustan Petroleum Corporation Limited • Mumbai, India</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> Jan 2022 – May 2022</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-comments"></i> Chatbot</span>
+              <span><i class="fa-solid fa-layer-group"></i> Full-stack</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-green"><i class="fa-solid fa-comment-dots"></i></span>Built a full-stack AI chatbot to explain Notional Coastal Freight (NCF).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="we-item left">
+          <div class="we-card cool">
+            <div class="we-card-top">
+              <div>
+                <h3>Software Developer</h3>
+                <p class="we-org">Bitgenie Technologies Private Limited • Mumbai, India</p>
+              </div>
+              <span class="we-pill"><i class="fa-regular fa-calendar"></i> Nov 2021 – Feb 2022</span>
+            </div>
+
+            <div class="we-stack">
+              <span><i class="fa-solid fa-image"></i> DALL·E</span>
+              <span><i class="fa-solid fa-pen-nib"></i> GPT-3</span>
+              <span><i class="fa-solid fa-gem"></i> NFTs</span>
+            </div>
+
+            <ul class="we-points">
+              <li><span class="pt-ic ic-pink"><i class="fa-solid fa-palette"></i></span>Generated NFT artwork using DALL·E + GPT-3 from text prompts.</li>
+            </ul>
+          </div>
+
+          <div class="we-mid">
+            <span class="we-icon"><i class="fa-solid fa-briefcase"></i></span>
+          </div>
+
+          <div class="we-date">2021–2022</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+<section class="projects page" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">WHAT I’VE BUILT</p>
+      <h2 class="section-title">Projects<span class="dot">.</span></h2>
+      <p class="section-subtitle">Academic + systems projects.</p>
+    </div>
+
+    <div class="proj2-grid">
+
+      <!-- 1 -->
+      <article class="proj2-card">
+        <div class="proj2-media">
+          <img
+            src="/Users/jaipdalvi/Desktop/Work/Updated_Portfolio/images/movie.png"
+            alt="Recommendation system dashboard"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+         
+          <a class="proj2-github" href="https://github.com/cmu-seai/group-project-f25-lord-of-the-models" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <div class="proj2-body">
+          <h3>Movie Based Recommendation System</h3>
+          <p class="proj2-desc">
+            Developed a scalable two-tower recommendation engine for 1M+ users and 27K movies, integrating real-time telemetry, monitoring, and canary deployments using Kafka, Docker, Kubernetes, and Prometheus.
+          </p>
+          <div class="proj2-tags">
+            <a href="#">#Python</a><a href="#">#Kafka</a><a href="#">#Docker</a><a href="#">#Kubernetes</a><a href="#">#Prometheus</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="proj2-card">
+        <div class="proj2-media">
+          <img
+            src="/Users/jaipdalvi/Desktop/Work/Updated_Portfolio/images/minirag.jpeg"
+            alt="Graph / network system"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+         
+          <a class="proj2-github" href="https://github.com/vkhare26/MiniRAG-Temporal-Enhancement" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <div class="proj2-body">
+          <h3>Temporal Reasoning in MiniRAG</h3>
+          <p class="proj2-desc">
+            Enhanced retrieval-augmented generation (RAG) by implementing temporal graph-based retrieval and advanced re-ranking, resulting in improved context relevance and answer accuracy.
+          </p>
+          <div class="proj2-tags">
+            <a href="#">#RAG</a><a href="#">#Graphs</a><a href="#">#ReRanking</a><a href="#">#Python</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="proj2-card">
+        <div class="proj2-media">
+          <img
+            src="/Users/jaipdalvi/Desktop/Work/Updated_Portfolio/images/ddos.png"
+            alt="Cyber security"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+         
+      
+        </div>
+
+        <div class="proj2-body">
+          <h3>DDoS Attack Detection using ANN</h3>
+          <p class="proj2-desc">
+            Designed and trained an artificial neural network to classify DDoS attack types, extracting key features and improving detection rates for network security applications.
+          </p>
+          <div class="proj2-tags">
+            <a href="#">#DeepLearning</a><a href="#">#Security</a><a href="#">#ANN</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="proj2-card">
+        <div class="proj2-media">
+          <img
+            src="/Users/jaipdalvi/Desktop/Work/Updated_Portfolio/images/spotify.jpg"
+            alt="NLP chatbot"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+      
+     
+        </div>
+
+        <div class="proj2-body">
+          <h3>Multi-Class Classification of Different Region Pop Songs using Spotify Database </h3>
+          <p class="proj2-desc">
+            Analyzed Indian tribal songs to identify key factors driving song popularity and developed models for targeting specific language audiences.
+          </p>
+          <div class="proj2-tags">
+            <a href="#">#Seaborn</a><a href="#">#Pandas</a><a href="#">#Matplotlib</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="page" id="skills">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">WHAT I KNOW</p>
+        <h2 class="section-title">Skills<span class="dot">.</span></h2>
+        <p class="section-subtitle">Core technologies I use to build ML, LLM, and production systems.</p>
+      </div>
+
+      <div class="skills-wrap">
+
+        <div class="skills-group">
+          <h3 class="skills-group-title"><span class="bar"></span> Programming</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-python"></i><h4>Python</h4><p>Primary language</p></div>
+            <div class="skill-card"><i class="fa-solid fa-c"></i><h4>C</h4><p>Core foundations</p></div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i><h4>SQL</h4><p>Queries & analytics</p></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title"><span class="bar"></span> Machine Learning & AI</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fa-solid fa-brain"></i><h4>Machine Learning</h4><p>Modeling & eval</p></div>
+            <div class="skill-card"><i class="fa-solid fa-network-wired"></i><h4>Deep Learning</h4><p>Neural nets</p></div>
+            <div class="skill-card"><i class="fa-solid fa-robot"></i><h4>LLMs</h4><p>Apps & tuning</p></div>
+            <div class="skill-card"><i class="fa-solid fa-magnifying-glass"></i><h4>RAG</h4><p>Retrieval + QA</p></div>
+            <div class="skill-card"><i class="fa-solid fa-sliders"></i><h4>Fine-tuning</h4><p>LoRA / SFT</p></div>
+            <div class="skill-card"><i class="fa-solid fa-layer-group"></i><h4>Embeddings</h4><p>Vector search</p></div>
+            <div class="skill-card"><i class="fa-solid fa-filter"></i><h4>Re-ranking</h4><p>Better relevance</p></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title"><span class="bar"></span> LLM & NLP Stack</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fa-solid fa-link"></i><h4>LangChain</h4><p>Pipelines</p></div>
+            <div class="skill-card"><i class="fa-solid fa-file-lines"></i><h4>LlamaParse</h4><p>PDF parsing</p></div>
+            <div class="skill-card"><i class="fa-solid fa-layer-group"></i><h4>FAISS</h4><p>Vector index</p></div>
+            <div class="skill-card"><i class="fa-solid fa-chart-simple"></i><h4>Streamlit</h4><p>Apps</p></div>
+            <div class="skill-card"><i class="fa-solid fa-wand-magic-sparkles"></i><h4>Prompting</h4><p>Structured output</p></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title"><span class="bar"></span> MLOps & Systems</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-docker"></i><h4>Docker</h4><p>Containers</p></div>
+            <div class="skill-card"><i class="fa-solid fa-cubes"></i><h4>Kubernetes</h4><p>Orchestration</p></div>
+            <div class="skill-card"><i class="fa-solid fa-code-branch"></i><h4>CI/CD</h4><p>Automation</p></div>
+            <div class="skill-card"><i class="fa-solid fa-box-archive"></i><h4>DVC</h4><p>Data versioning</p></div>
+            <div class="skill-card"><i class="fa-solid fa-bolt"></i><h4>Kafka</h4><p>Telemetry streams</p></div>
+            <div class="skill-card"><i class="fa-solid fa-heart-pulse"></i><h4>Prometheus</h4><p>Metrics</p></div>
+            <div class="skill-card"><i class="fa-solid fa-chart-line"></i><h4>Grafana</h4><p>Dashboards</p></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title"><span class="bar"></span> Data & Databases</h3>
+          <div class="skills-grid wide">
+            <div class="skill-card wide"><i class="fa-solid fa-database"></i><div><h4>MySQL</h4><p>Relational DB</p></div></div>
+            <div class="skill-card wide"><i class="fa-solid fa-database"></i><div><h4>PostgreSQL</h4><p>Relational DB</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== CONTACT ===================== -->
+<section class="page" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">LET'S TALK</p>
+      <h2 class="section-title">Contact<span class="dot">.</span></h2>
+      <p class="section-subtitle">
+        Feel free to reach out — I’m happy to chat about ML, LLMs, RAG systems, and internships/full-time roles.
+      </p>
+    </div>
+
+    <div class="contact-wrap">
+
+      <!-- Left: Contact cards -->
+      <div class="contact-left">
+        <div class="contact-card">
+          <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+          <p>Best way to reach me</p>
+          <a class="contact-link" href="mailto:jaidalvi17@gmail.com">jaidalvi17@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+          <h3><i class="fa-brands fa-linkedin"></i> LinkedIn</h3>
+          <p>Connect / message me</p>
+          <a class="contact-link" href="https://www.linkedin.com/in/jaipdalvi/" target="_blank" rel="noopener noreferrer">
+            https://www.linkedin.com/in/jaipdalvi/
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3><i class="fa-brands fa-github"></i> GitHub</h3>
+          <p>Projects & code</p>
+          <a class="contact-link" href="https://github.com/JD130899/" target="_blank" rel="noopener noreferrer">
+            https://github.com/JD130899/
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3><i class="fa-solid fa-location-dot"></i> Location</h3>
+          <p>Pittsburgh, PA (Open to relocation)</p>
+          <span class="contact-muted">EST timezone</span>
+        </div>
+      </div>
+
+      <!-- Right: Contact form -->
+      <div class="contact-right">
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What’s this about?" />
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="contact-btn" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <a class="contact-btn ghost" href="images/Jai Dalvi-Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-file-lines"></i> View Resume
+            </a>
+          </div>
+        </form>
+
+        <p class="contact-note">
+          <i class="fa-solid fa-shield"></i>
+          No spam — your message goes directly to my inbox.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    // Always force dark mode
+    document.body.classList.add('dark-mode');
+  </script>
+  <script src="main.js"></script>
+
+  <!-- ✅ Router script (add into main.js if you prefer) -->
+  <script>
+    const pages = document.querySelectorAll(".page");
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+    function showPage(hash) {
+      const target = hash || "#home";
+      const id = target.replace("#", "");
+
+      pages.forEach(p => p.classList.remove("active"));
+
+      const page = document.getElementById(id);
+      if (page) page.classList.add("active");
+      else document.getElementById("home")?.classList.add("active");
+
+      if (page) page.scrollTop = 0;
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const hash = link.getAttribute("href");
+
+        history.pushState(null, "", hash);
+        showPage(hash);
+      });
+    });
+
+    window.addEventListener("popstate", () => showPage(location.hash));
+    showPage(location.hash);
+  </script>
+</body>
+</html>
